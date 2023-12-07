@@ -12,27 +12,29 @@ class Employee:
 
 
 class MonthlySalaryEmployee(Employee):
-    def __init__(self, name, monthly_salary, bonus=0, contract_commission=0):
+    def __init__(self, name, monthly, bonus=0, contract_commission=0, num_contracts=0):
         super().__init__(name)
-        self.monthly_salary = monthly_salary
+        self.monthly = monthly
         self.bonus = bonus
         self.contract_commission = contract_commission
+        self.num_contracts = num_contracts
 
     def get_pay(self):
-        total_pay = self.monthly_salary + self.bonus + (self.contract_commission * self.num_contracts)
+        total_pay = self.monthly + self.bonus + (self.contract_commission * self.num_contracts)
         return total_pay
 
     def __str__(self):
-        return f"{self.name} works on a monthly salary of {self.monthly_salary} and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}."
+        return f"{self.name} works on a monthly salary of {self.monthly} and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}."
 
 
 class HourlyEmployee(Employee):
-    def __init__(self, name, hours_worked, hourly_rate, bonus=0, contract_commission=0):
+    def __init__(self, name, hours_worked, hourly_rate, bonus=0, contract_commission=0, num_contracts=0):
         super().__init__(name)
         self.hours_worked = hours_worked
         self.hourly_rate = hourly_rate
         self.bonus = bonus
         self.contract_commission = contract_commission
+        self.num_contracts = num_contracts
 
     def get_pay(self):
         total_pay = (self.hours_worked * self.hourly_rate) + self.bonus + (self.contract_commission * self.num_contracts)
