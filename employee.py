@@ -52,11 +52,4 @@ jan = HourlyEmployee('Jan', 150, 25, contract_commission=220, num_contracts=3)
 robbie = MonthlySalaryEmployee('Robbie', 2000, bonus=1500)
 ariel = HourlyEmployee('Ariel', 120, 30, bonus=600)
 
-# Testing
-print(str(billie))
-print(str(charlie))
-print(str(renee))
-print(str(jan))
-print(str(robbie))
-print(str(ariel))
 
