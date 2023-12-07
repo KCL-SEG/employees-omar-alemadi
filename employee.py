@@ -57,7 +57,7 @@ class HourlyContractBonusEmployee(HourlyContractEmployee):
 
 class MonthlySalaryContractCommissionEmployee(MonthlySalaryEmployee):
     def __init__(self, name, monthly_salary, contracts_landed, commission_per_contract):
-        super().__init__(name)
+        super().__init__(name, monthly_salary)
         self.contracts_landed = contracts_landed
         self.commission_per_contract = commission_per_contract
 
