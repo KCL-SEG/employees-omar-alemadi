@@ -23,7 +23,7 @@ class MonthlySalaryEmployee(Employee):
         return self.monthly_salary + self.bonus + (self.contracts * self.commission_per_contract)
 
     def __str__(self):
-        return f"{self.name} works on a monthly salary of {self.monthly_salary} and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}."
+        return f"{self.name} works on a monthly salary of {self.monthly_salary}. Their total pay is {self.get_pay()}."
 
 class HourlySalaryEmployee(Employee):
     def __init__(self, name, hourly_wage, hours_worked, bonus=0, contracts=0, commission_per_contract=0):
@@ -38,7 +38,7 @@ class HourlySalaryEmployee(Employee):
         return (self.hourly_wage * self.hours_worked) + self.bonus + (self.contracts * self.commission_per_contract)
 
     def __str__(self):
-        return f"{self.name} works on a contract of {self.hours_worked} hours at {self.hourly_wage}/hour and receives a bonus commission of {self.bonus}. Their total pay is {self.get_pay()}."
+        return f"{self.name} works on a contract of {self.hours_worked} hours at {self.hourly_wage}/hour. Their total pay is {self.get_pay()}."
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
 billie = MonthlySalaryEmployee('Billie', 4000)
