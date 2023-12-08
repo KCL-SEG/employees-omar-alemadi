@@ -89,7 +89,6 @@ class CommissionWorkContract:
         return f"{self.emplyy_name} works on a contract of {self.emplyy_hours} hours at {self.emplyy_wage}/hour and receives a commission for {self.emplyy_num_contracts} contract(s) at {self.emplyy_commission_rate}/contract. Their total pay is {self.get_pay()}."
 
 
-# Create employee instances
 billie = Employee('Billie', 'monthly', 4000)
 charlie = WorkContract('Charlie', 'hourly', 25, 100)
 renee = CommissionSalaryEmployee('Renee', 'commissioned', 3000, 200, 4)
