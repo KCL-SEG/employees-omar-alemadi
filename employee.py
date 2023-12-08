@@ -63,9 +63,6 @@ class BonusCommissionedEmployee(MonthlyEmployee):
 billie = MonthlyEmployee('Billie', 4000)
 charlie = ContractEmployee('Charlie', 100, 25)
 renee = CommissionedEmployee('Renee', 3000, 200, 4)
-jan = CommissionedEmployee('Jan', 0, 220, 3)  # Monthly salary set to 0
+jan = ContractEmployee('Jan', 150, 25)
 robbie = BonusCommissionedEmployee('Robbie', 2000, 1500)
-ariel = BonusCommissionedEmployee('Ariel', 0, 600)  # Monthly salary set to 0
-
-
-
+ariel = ContractEmployee('Ariel', 120, 30)
